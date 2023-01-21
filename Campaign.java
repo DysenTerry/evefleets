@@ -4,11 +4,11 @@
 
 import java.io.*;
 import java.util.*;
-import java.util.ArrayList.*;
-import java.lang.Integer.*;
+//import java.util.ArrayList.*;
+//import java.lang.Integer.*;
 import java.net.URL;
 import java.util.Timer;
-import java.util.TimerTask;
+//import java.util.TimerTask;
 
 
 /*
@@ -157,12 +157,12 @@ public class Campaign  {
 	{
 		String pattern= "^[a-zA-Z0-9]*$";
 		String temp = "";
-		String tempFleetName = "";
-		int tempX = 0;
-		int tempZ = 0;
-		String tempNotes = "";
-		String tempTag = "";
-		Integer tempAllignment = new Integer("0");
+		//String tempFleetName = "";
+		//int tempX = 0;
+		//int tempZ = 0;
+		//String tempNotes = "";
+		//String tempTag = "";
+		//Integer tempAllignment = new Integer("0");
 		//int updated = 0;
 
 		try{
@@ -175,6 +175,7 @@ public class Campaign  {
 			{
 				myConnection = "";
 				connectionMessage = "    Not Connected...Enter an EVEFleets server URL.";
+				in.close();
 				return;
 			}
 
@@ -184,11 +185,13 @@ public class Campaign  {
   			if (str == null || str.compareTo("")==0)
   			{
   				connectionMessage = "    Not Connected...Enter a channel name.";
+				in.close();
 				return;
   			}
     		if (!str.matches(pattern))
   			{
   				connectionMessage = "    Not Connected...Channel contains invalid characters.  a-Z and 0-9 allowed.";
+				in.close();
 				return;
   			}
   			myChannel = str;
@@ -199,12 +202,14 @@ public class Campaign  {
   			if (str == null || str.compareTo("")==0)
   			{
   				connectionMessage = "    Not Connected...Enter a password.";
+				in.close();
 				return;
   			}
     		if (!str.matches(pattern))
   			{
   				connectionMessage = "    Not Connected...Password contains invalid characters.  a-Z and 0-9 allowed.";
-				return;
+				  in.close();
+				  return;
   			}
   			myPass = str;
 
@@ -243,7 +248,7 @@ public class Campaign  {
 		int tempZ = 0;
 		String tempNotes = "";
 		String tempTag = "";
-		Integer tempAllignment = new Integer("0");
+		Integer tempAllignment = Integer.valueOf("0");
 		int updated = 0;
 
 		try{
@@ -256,6 +261,7 @@ public class Campaign  {
 			{
 				myConnection = "";
 				connectionMessage = "    Not Connected...Enter an EVEFleets server URL.";
+				in.close();
 				return;
 			}
 
@@ -265,11 +271,13 @@ public class Campaign  {
   			if (str == null || str.compareTo("")==0)
   			{
   				connectionMessage = "    Not Connected...Enter a channel name.";
+				in.close();
 				return;
   			}
     		if (!str.matches(pattern))
   			{
   				connectionMessage = "    Not Connected...Channel contains invalid characters.  a-Z and 0-9 allowed.";
+				in.close();
 				return;
   			}
   			myChannel = str;
@@ -280,11 +288,13 @@ public class Campaign  {
   			if (str == null || str.compareTo("")==0)
   			{
   				connectionMessage = "    Not Connected...Enter a password.";
+				in.close();
 				return;
   			}
     		if (!str.matches(pattern))
   			{
   				connectionMessage = "    Not Connected...Password contains invalid characters.  a-Z and 0-9 allowed.";
+				in.close();
 				return;
   			}
   			myPass = str;
@@ -386,7 +396,7 @@ public class Campaign  {
 						continue;
 					}
 					if(tempTag.compareTo("AlignStart")==0)
-						tempAllignment = new Integer(temp);
+						tempAllignment = Integer.valueOf(temp);
 
 					if (temp.compareTo("NotesStart")==0)
 					{
@@ -414,12 +424,12 @@ public class Campaign  {
 	{
 		String pattern= "^[a-zA-Z0-9]*$";
 		String temp = "";
-		String tempFleetName = "";
-		int tempX = 0;
-		int tempZ = 0;
-		String tempNotes = "";
-		String tempTag = "";
-		Integer tempAllignment = new Integer("0");
+		//String tempFleetName = "";
+		//int tempX = 0;
+		//int tempZ = 0;
+		//String tempNotes = "";
+		//String tempTag = "";
+		//Integer tempAllignment = new Integer("0");
 		//int updated = 0;
 
 		try{
@@ -432,6 +442,7 @@ public class Campaign  {
 			{
 				myConnection = "";
 				connectionMessage = "    Not Connected...Enter an EVEFleets server URL.";
+				in.close();
 				return;
 			}
 
@@ -441,11 +452,13 @@ public class Campaign  {
   			if (str == null || str.compareTo("")==0)
   			{
   				connectionMessage = "    Not Connected...Enter a channel name.";
+				in.close();
 				return;
   			}
     		if (!str.matches(pattern))
   			{
   				connectionMessage = "    Not Connected...Channel contains invalid characters.  a-Z and 0-9 allowed.";
+				in.close();
 				return;
   			}
   			myChannel = str;
@@ -456,11 +469,13 @@ public class Campaign  {
   			if (str == null || str.compareTo("")==0)
   			{
   				connectionMessage = "    Not Connected...Enter a password.";
+				in.close();
 				return;
   			}
     		if (!str.matches(pattern))
   			{
   				connectionMessage = "    Not Connected...Password contains invalid characters.  a-Z and 0-9 allowed.";
+				in.close();
 				return;
   			}
   			myPass = str;
@@ -491,12 +506,12 @@ public class Campaign  {
 	{
 		String pattern= "^[a-zA-Z0-9]*$";
 		String temp = "";
-		String tempFleetName = "";
-		int tempX = 0;
-		int tempZ = 0;
-		String tempNotes = "";
-		String tempTag = "";
-		Integer tempAllignment = new Integer("0");
+		//String tempFleetName = "";
+		//int tempX = 0;
+		//int tempZ = 0;
+		//String tempNotes = "";
+		//String tempTag = "";
+		//Integer tempAllignment = new Integer("0");
 		//int updated = 0;
 
 		try{
@@ -509,6 +524,7 @@ public class Campaign  {
 			{
 				myConnection = "";
 				connectionMessage = "    Not Connected...Enter an EVEFleets server URL.";
+				in.close();
 				return;
 			}
 
@@ -518,11 +534,13 @@ public class Campaign  {
   			if (str == null || str.compareTo("")==0)
   			{
   				connectionMessage = "    Not Connected...Enter a channel name.";
+				  in.close();
 				return;
   			}
     		if (!str.matches(pattern))
   			{
   				connectionMessage = "    Not Connected...Channel contains invalid characters.  a-Z and 0-9 allowed.";
+				in.close();
 				return;
   			}
   			myChannel = str;
@@ -533,11 +551,13 @@ public class Campaign  {
   			if (str == null || str.compareTo("")==0)
   			{
   				connectionMessage = "    Not Connected...Enter a password.";
+				  in.close();
 				return;
   			}
     		if (!str.matches(pattern))
   			{
   				connectionMessage = "    Not Connected...Password contains invalid characters.  a-Z and 0-9 allowed.";
+				  in.close();
 				return;
   			}
   			myPass = str;
@@ -591,8 +611,8 @@ public class Campaign  {
 		ArrayList<Object> toggleFleet = new ArrayList<Object>();
 		if (x.size()==0)  //No fleets exist, go to center of the map
 		{
-			toggleFleet.add(new Integer(0));
-			toggleFleet.add(new Integer(0));
+			toggleFleet.add(Integer.valueOf(0));
+			toggleFleet.add(Integer.valueOf(0));
 		}
 		else
 		{

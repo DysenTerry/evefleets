@@ -26,7 +26,7 @@ class ActionListenerSystemFind implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-    	String uni = "";
+    	//String uni = "";
 		if(e.getActionCommand()== "Find"){
 			String theSystem = system.getText();
 			found = false;

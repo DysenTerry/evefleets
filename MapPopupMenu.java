@@ -103,10 +103,10 @@ public class MapPopupMenu extends JPanel {
 			theColor = 3;
 			algn = -10;}
 
-		campaign.addItem(name, (int)mapCoord.getX(), 0, (int)mapCoord.getY(), theFleetNotes.getText(), systemID, new Integer(algn),
+		campaign.addItem(name, (int)mapCoord.getX(), 0, (int)mapCoord.getY(), theFleetNotes.getText(), systemID, Integer.valueOf(algn),
 			             fleetContents, theColor,
 			             "", "", "","", "", 0, 0);
-		campaign.addGroupFleet(name, (int)mapCoord.getX(), (int)mapCoord.getY(), new Integer(algn), theFleetNotes.getText());
+		campaign.addGroupFleet(name, (int)mapCoord.getX(), (int)mapCoord.getY(), Integer.valueOf(algn), theFleetNotes.getText());
 	}
 
 	public int getOptionSelected()

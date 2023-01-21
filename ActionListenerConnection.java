@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
-import java.util.*;
+//import java.util.*;
 import java.io.*;
 
 
@@ -30,7 +30,7 @@ class ActionListenerConnection implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-    	String uni = "";
+    	//String uni = "";
     	String pattern= "^[a-zA-Z0-9]*$";
 		if(e.getActionCommand()== "Set"){
 			if(channel.getText().matches(pattern) && pass.getText().matches(pattern))

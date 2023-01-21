@@ -33,12 +33,12 @@ import javax.swing.JScrollPane;
 import javax.swing.text.html.HTMLEditorKit;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.io.*;
+//import java.io.*;
 import javax.swing.JWindow;
-import javax.swing.JScrollPane;
+//import javax.swing.JScrollPane;
 import java.awt.BorderLayout;
-import javax.swing.text.html.HTMLEditorKit;
-import java.net.URL;
+//import javax.swing.text.html.HTMLEditorKit;
+//import java.net.URL;
 import javax.swing.JTextArea;
 
 public class EveMap {
@@ -48,9 +48,9 @@ public class EveMap {
 	protected static Stars myStars;
 	private static Jumps myJumps;
 	protected static Campaign myCampaign;
-	private static WebData jumpsLastHour;
-	private static WebData killsLastHour;
-	private static WebData sovereignty;
+	//private static WebData jumpsLastHour;
+	//private static WebData killsLastHour;
+	//private static WebData sovereignty;
 
 	protected static MapPopupMenu myMenu;
 	protected static double offsetX;
@@ -87,10 +87,10 @@ public class EveMap {
     	String htmlStar = "<br>&nbsp;Creating Stars: ";
     	String htmlCamp = "<br>&nbsp;Initializing Campaign: ";
     	String htmlJump = "<br>...Rubicon 1.0.4 93577 build<br><br>&nbsp;Creating Jumps: ";
-    	String htmlCelest = "<br>&nbsp;Adding Celestial Objects: ";
-    	String htmlOnlineJump = "<br>&nbsp;Accessing eveonline...Jumps in the last hour.";
-    	String htmlOnlineKill = "<br>&nbsp;Accessing eveonline...Kills in the last hour.";
-    	String htmlOnlineSov = "<br>&nbsp;Accessing eveonline...System sovereignty.";
+    	//String htmlCelest = "<br>&nbsp;Adding Celestial Objects: ";
+    	//String htmlOnlineJump = "<br>&nbsp;Accessing eveonline...Jumps in the last hour.";
+    	//String htmlOnlineKill = "<br>&nbsp;Accessing eveonline...Kills in the last hour.";
+    	//String htmlOnlineSov = "<br>&nbsp;Accessing eveonline...System sovereignty.";
     	String htmlEnd = "</font></body></html>";
     	selectedFleet=0;
 
@@ -360,8 +360,8 @@ public class EveMap {
 			{
 				ArrayList<Object> thisStar = myStars.getNextStar(1);
 
-				Double temp2 = (Double)thisStar.get(5);
-				String temp1 = (String)thisStar.get(0);
+				//Double temp2 = (Double)thisStar.get(5);
+				//String temp1 = (String)thisStar.get(0);
 		/*		if((temp1.compareTo("Cobalt Edge")==0 ||
 				   temp1.compareTo("Perrigen Falls")==0 ||
 				   temp1.compareTo("Malpais")==0 ||
@@ -388,11 +388,11 @@ public class EveMap {
 			myStars.resetList();
 
 			// Paint Campaign
-			int[] fleetStarX;
-			int[] fleetStarY;
+			//int[] fleetStarX;
+			//int[] fleetStarY;
 			int campaignX = 0;
 			int campaignY = 0;
-			double fleetScale = 1.0;
+			//double fleetScale = 1.0;
 
 			for (int i=0;i<myCampaign.getSize();i++)
 			{
@@ -711,7 +711,7 @@ public class EveMap {
 			double minMap = .05;
 			double maxMap = 7.0;
 
-			Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+			//Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 			windowSize = frame.getSize();
 				offsetX = (canvas.translateX - (windowSize.width)/2)/canvas.scale;
 				offsetY = (canvas.translateY - (windowSize.height)/2)/canvas.scale;
